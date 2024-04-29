@@ -5,7 +5,7 @@
         <div class="card-panel" v-on:click="jump('/admin/user/online')">
           <i class="el-icon-user-solid" style="font-size:50px;color: #f4516c;"></i>
           <div class="card-panel-description">
-            <div class="card-panel-text">在线数</div>
+            <div class="card-panel-text">Online numbers</div>
             <countTo :startVal='0' :endVal='counts.online' :duration='2000' class="panel-num"></countTo>
           </div>
         </div>
@@ -15,7 +15,7 @@
         <div class="card-panel" v-on:click="jump('/admin/user/list')">
           <i class="el-icon-user-solid" style="font-size:50px;color: #36a3f7"></i>
           <div class="card-panel-description">
-            <div class="card-panel-text">用户数</div>
+            <div class="card-panel-text">Number of users</div>
             <countTo :startVal='0' :endVal='counts.user' :duration='2000' class="panel-num"></countTo>
           </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="card-panel" v-on:click="jump('/admin/group/list')">
           <i class="el-icon-wallet" style="font-size:50px;color:#34bfa3"></i>
           <div class="card-panel-description">
-            <div class="card-panel-text">用户组数</div>
+            <div class="card-panel-text">Number of user groups</div>
             <countTo :startVal='0' :endVal='counts.group' :duration='2000' class="panel-num"></countTo>
           </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="card-panel" v-on:click="jump('/admin/user/ip_map')">
           <i class="el-icon-s-order" style="font-size:50px;color:#40c9c6"></i>
           <div class="card-panel-description">
-            <div class="card-panel-text">IP映射数</div>
+            <div class="card-panel-text">Number of IP mappings</div>
             <countTo :startVal='0' :endVal='counts.ip_map' :duration='2000' class="panel-num"></countTo>
           </div>
         </div>
@@ -54,11 +54,11 @@
             </div>           
             <div class="time-range">
                 <el-radio-group v-model="lineChartScope.online" size="mini" @change="((label)=>{lineChartScopeChange('online', label)})">
-                    <el-radio-button label="rt" >实时</el-radio-button>
-                    <el-radio-button label="1h">1小时</el-radio-button>
-                    <el-radio-button label="24h">24小时</el-radio-button>
-                    <el-radio-button label="7d">7天</el-radio-button>
-                    <el-radio-button label="30d">30天</el-radio-button>
+                    <el-radio-button label="rt" >real time</el-radio-button>
+                    <el-radio-button label="1h">1 hour</el-radio-button>
+                    <el-radio-button label="24h">24 hour</el-radio-button>
+                    <el-radio-button label="7d">7 day</el-radio-button>
+                    <el-radio-button label="30d">30 day</el-radio-button>
                 </el-radio-group>
             </div>
         </el-col>
@@ -72,11 +72,11 @@
             </div>            
             <div class="time-range">
                 <el-radio-group v-model="lineChartScope.network" size="mini" @change="((label)=>{lineChartScopeChange('network', label)})">
-                    <el-radio-button label="rt" >实时</el-radio-button>
-                    <el-radio-button label="1h">1小时</el-radio-button>
-                    <el-radio-button label="24h">24小时</el-radio-button>
-                    <el-radio-button label="7d">7天</el-radio-button>
-                    <el-radio-button label="30d">30天</el-radio-button>
+                    <el-radio-button label="rt" >real time</el-radio-button>
+                    <el-radio-button label="1h">1 hour</el-radio-button>
+                    <el-radio-button label="24h">24 hour</el-radio-button>
+                    <el-radio-button label="7d">7 day</el-radio-button>
+                    <el-radio-button label="30d">30 day</el-radio-button>
                 </el-radio-group>
             </div>            
         </el-col>
@@ -87,11 +87,11 @@
             <LineChart :chart-data="lineChart.cpu"/>
             <div class="time-range">
                 <el-radio-group v-model="lineChartScope.cpu" size="mini" @change="((label)=>{lineChartScopeChange('cpu', label)})">
-                    <el-radio-button label="rt" >实时</el-radio-button>
-                    <el-radio-button label="1h">1小时</el-radio-button>
-                    <el-radio-button label="24h">24小时</el-radio-button>
-                    <el-radio-button label="7d">7天</el-radio-button>
-                    <el-radio-button label="30d">30天</el-radio-button>
+                    <el-radio-button label="rt" >real time</el-radio-button>
+                    <el-radio-button label="1h">1 hour</el-radio-button>
+                    <el-radio-button label="24h">24 hour</el-radio-button>
+                    <el-radio-button label="7d">7 day</el-radio-button>
+                    <el-radio-button label="30d">30 day</el-radio-button>
                 </el-radio-group>
             </div>
         </el-col>
@@ -99,11 +99,11 @@
             <LineChart :chart-data="lineChart.mem"/>
             <div class="time-range">
                 <el-radio-group v-model="lineChartScope.mem" size="mini" @change="((label)=>{lineChartScopeChange('mem', label)})">
-                    <el-radio-button label="rt" >实时</el-radio-button>
-                    <el-radio-button label="1h">1小时</el-radio-button>
-                    <el-radio-button label="24h">24小时</el-radio-button>
-                    <el-radio-button label="7d">7天</el-radio-button>
-                    <el-radio-button label="30d">30天</el-radio-button>
+                    <el-radio-button label="rt" >real time</el-radio-button>
+                    <el-radio-button label="1h">1 hour</el-radio-button>
+                    <el-radio-button label="24h">24 hour</el-radio-button>
+                    <el-radio-button label="7d">7 day</el-radio-button>
+                    <el-radio-button label="30d">30 day</el-radio-button>
                 </el-radio-group>
             </div>            
         </el-col>
