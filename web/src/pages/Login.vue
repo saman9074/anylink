@@ -3,18 +3,18 @@
   <div class="login">
     <el-card style="width: 550px;">
 
-      <div class="issuer">AnyLink SSL VPN管理后台</div>
+      <div class="issuer">AnyLink SSL VPN Management Backend</div>
 
       <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="ruleForm">
-        <el-form-item label="管理用户名" prop="admin_user">
+        <el-form-item label="Username" prop="admin_user">
           <el-input v-model="ruleForm.admin_user"></el-input>
         </el-form-item>
-        <el-form-item label="管理密码" prop="admin_pass">
+        <el-form-item label="Password" prop="admin_pass">
           <el-input type="password" v-model="ruleForm.admin_pass" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" :loading="isLoading" @click="submitForm('ruleForm')">登录</el-button>
-          <el-button @click="resetForm('ruleForm')">重置</el-button>
+          <el-button type="primary" :loading="isLoading" @click="submitForm('ruleForm')">Login</el-button>
+          <el-button @click="resetForm('ruleForm')">reset</el-button>
         </el-form-item>
       </el-form>
 
